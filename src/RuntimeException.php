@@ -1,5 +1,5 @@
 <?php
-namespace Star\Util\ThrowException;
+namespace Bee;
 
 /**
  * 应用异常基类
