@@ -19,8 +19,6 @@ class Exception extends \Exception
     protected $data = [];
 
     /**
-     * 运行参数
-     *
      * @var array
      */
     protected $runtime = [];
