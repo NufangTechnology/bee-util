@@ -16,7 +16,7 @@ class Exception extends \Exception
     /**
      * @var array
      */
-    protected $data = [];
+    protected $data;
 
     /**
      * @var array
