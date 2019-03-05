@@ -33,7 +33,7 @@ class Exception extends \Exception
      * @param array $data
      * @param mixed $runtime
      */
-    public function __construct(string $message, int $code = 0, array $data = [], $runtime = null)
+    public function __construct(string $message, int $code = 0, $data = null, $runtime = null)
     {
         $this->message = $message;
         $this->code    = $code;
