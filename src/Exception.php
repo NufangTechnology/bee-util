@@ -1,8 +1,6 @@
 <?php
 namespace Bee;
 
-use phpDocumentor\Reflection\Types\Mixed_;
-
 /**
  * Exception
  *
