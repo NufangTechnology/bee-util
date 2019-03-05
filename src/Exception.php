@@ -1,6 +1,8 @@
 <?php
 namespace Bee;
 
+use phpDocumentor\Reflection\Types\Mixed_;
+
 /**
  * Exception
  *
@@ -21,7 +23,7 @@ class Exception extends \Exception
     /**
      * @var array
      */
-    protected $runtime = [];
+    protected $runtime;
 
     /**
      * Throwable constructor.
@@ -29,9 +31,9 @@ class Exception extends \Exception
      * @param string $message
      * @param int $code
      * @param array $data
-     * @param array $runtime
+     * @param mixed $runtime
      */
-    public function __construct(string $message, int $code = 0, array $data = [], array $runtime = [])
+    public function __construct(string $message, int $code = 0, array $data = [], $runtime = null)
     {
         $this->message = $message;
         $this->code    = $code;
